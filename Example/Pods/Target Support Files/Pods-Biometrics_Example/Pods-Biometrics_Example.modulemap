@@ -1,0 +1,6 @@
+framework module Pods_Biometrics_Example {
+  umbrella header "Pods-Biometrics_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

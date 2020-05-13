@@ -1,0 +1,16 @@
+PODS:
+  - Biometrics (0.1.0)
+
+DEPENDENCIES:
+  - Biometrics (from `../`)
+
+EXTERNAL SOURCES:
+  Biometrics:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Biometrics: 0e5761ae1aac4c9f9c63220ccfa9c4d36e76ff40
+
+PODFILE CHECKSUM: 3b64da7d4ea4c2baf3769a36d8d277279491b2d2
+
+COCOAPODS: 1.9.1

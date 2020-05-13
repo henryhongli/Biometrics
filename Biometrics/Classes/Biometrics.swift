@@ -115,19 +115,16 @@ open class Biometrics {
     
     public enum Wrong: Error {
         case cancel, cancelByUser, notAvailable, wrong, lockout, notEnrolled, fallback
-        public enum Wrong: Error {
-            case cancel, cancelByUser, notAvailable, wrong, lockout, notEnrolled, fallback
-            var descriotion: String{
-                switch self {
-                case .cancel:return "取消"
-                case .cancelByUser:return "用户点击取消"
-                case .notAvailable:return "设备不支持"
-                case .wrong:return "身份验证没有成功，因为用户未能提供有效的凭据(连续3次验证失败时提示)"
-                case .lockout:return "Touch ID 功能被锁定"
-                case .notEnrolled:return "Touch ID没有注册的手指"
-                case .fallback:return "用户点击返回"
-                    
-                }
+        var descriotion: String{
+            switch self {
+            case .cancel:return "取消"
+            case .cancelByUser:return "用户点击取消"
+            case .notAvailable:return "设备不支持"
+            case .wrong:return "身份验证没有成功，因为用户未能提供有效的凭据(连续3次验证失败时提示)"
+            case .lockout:return "Touch ID 功能被锁定"
+            case .notEnrolled:return "Touch ID没有注册的手指"
+            case .fallback:return "用户点击返回"
+                
             }
         }
     }

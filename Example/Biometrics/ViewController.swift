@@ -22,13 +22,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func startBio(_ sender: Any) {
-        Biometrics.tryUnlock { [weak self] (result) in
+        Biometrics.tryUnlock(.deviceOwnerAuthentication, "识别失败") { [weak self] (result) in
             switch result {
             case .failure(let error):
                 self?.bioResult.text = error.descriotion
                 switch error {
                 case .fallback:
-                    
+                    print("用户点击取消/或deviceOwnerAuthenticationWithBiometrics模式下选择输入密码")
                     return
                 default:
                     guard let `self` = self else { return }
@@ -41,6 +41,25 @@ class ViewController: UIViewController {
             }
             
         }
+//        Biometrics.tryUnlock { [weak self] (result) in
+//            switch result {
+//            case .failure(let error):
+//                self?.bioResult.text = error.descriotion
+//                switch error {
+//                case .fallback:
+//
+//                    return
+//                default:
+//                    guard let `self` = self else { return }
+//                    if self.canStillTry {
+//                        self.canStillTry.toggle()
+//                    }
+//                }
+//            case .success:
+//                self?.bioResult.text = "验证成功"
+//            }
+//
+//        }
     }
     
 }

@@ -42,8 +42,8 @@ Biometrics is available under the MIT license. See the LICENSE file for more inf
 ## <font color=ff4848>Step 1</font>
 ### Set property to the <font color=5494ff>Info.plist</font>
 ```ruby
-key:  Privacy - Face ID Usage Description
-value: 使用FaceID解锁$(BUNDLE_DISPLAY_NAME)
+key:  "Privacy - Face ID Usage Description"
+value: "使用FaceID解锁$(BUNDLE_DISPLAY_NAME)"
 
 ```
 

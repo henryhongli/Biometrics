@@ -37,9 +37,9 @@ pod 'Biometrics', :git => 'https://github.com/henryhongli/Biometrics.git',, :tag
 Biometrics is available under the MIT license. See the LICENSE file for more info.
 
 
-#How to use
+# How to use
 
-##<font color=ff4848>Step 1</font>
+## <font color=ff4848>Step 1</font>
 ### Set property to the <font color=5494ff>Info.plist</font>
 ```ruby
 key:  Privacy - Face ID Usage Description
@@ -48,7 +48,7 @@ value: 使用FaceID解锁$(BUNDLE_DISPLAY_NAME)
 ```
 
 
-##<font color=ff4848>Step 2</font>
+## <font color=ff4848>Step 2</font>
 ```ruby
 import Biometrics
 ```

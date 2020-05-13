@@ -19,6 +19,14 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'Biometrics'
 ```
+or
+```ruby
+pod 'Biometrics', :git => 'https://github.com/henryhongli/Biometrics.git'
+```
+or
+```ruby
+pod 'Biometrics', :git => 'https://github.com/henryhongli/Biometrics.git',, :tag => '0.1.0'
+```
 
 ## Author
 

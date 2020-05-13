@@ -11,6 +11,7 @@ import Biometrics
 class ViewController: UIViewController {
 
     @IBOutlet weak var bioResult: UILabel!
+    private var canStillTry: Bool = true
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -24,26 +25,19 @@ class ViewController: UIViewController {
         Biometrics.tryUnlock { [weak self] (result) in
             switch result {
             case .failure(let error):
+                self?.bioResult.text = error.descriotion
                 switch error {
                 case .fallback:
-                    bioResult.text = error.
+                    
                     return
                 default:
                     guard let `self` = self else { return }
                     if self.canStillTry {
-                        Showing("验证失败，请重试")
                         self.canStillTry.toggle()
                     }
-                    else {
-                        Showing("验证失败")
-                        self.changeAccout()
-                    }
                 }
-                
-                
             case .success:
-                self?.action.apply().start()
-                
+                self?.bioResult.text = "验证成功"
             }
             
         }

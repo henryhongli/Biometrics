@@ -89,14 +89,22 @@ open class Biometrics {
     /// 生物识别解锁
     ///
     /// - Parameters:
+    ///   - policy: 策略, deviceOwnerAuthentication 支持当多次验证错误后, 点击手动输入密码可以唤起设备密码输入页面
     ///   - reason: 解锁原因
     ///   - tryUnlock: 识别结果
     
-    public static func tryUnlock(_ reason: String = "--", _ tryUnlock: @escaping (Result<(), Wrong>) -> Void) {
+    public static func tryUnlock(_ policy: LAPolicy = .deviceOwnerAuthenticationWithBiometrics, _ reason: String = "--", _ tryUnlock: @escaping (Result<(), Wrong>) -> Void) {
                 
-        
-        LAContext().evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: (reason == "--" ? "解锁\(Biometrics.appName)":reason)) { (success, error) in
-        
+        var option = policy
+        if #available(iOS 9.0, *), policy == .deviceOwnerAuthentication {
+            option = .deviceOwnerAuthentication
+        } else {
+            if policy != .deviceOwnerAuthenticationWithBiometrics {
+                print("Biometrics :----   您的设备系统版本过低, 不支持  deviceOwnerAuthentication 策略, 已为您调整为  deviceOwnerAuthenticationWithBiometrics  ----")
+            }
+            option = .deviceOwnerAuthenticationWithBiometrics
+        }
+        LAContext().evaluatePolicy(option, localizedReason: (reason == "--" ? "解锁\(Biometrics.appName)":reason)) { (success, error) in
             DispatchQueue.main.async {
                 
                 if success {
@@ -105,17 +113,14 @@ open class Biometrics {
                 else {
                     tryUnlock(analysis(error))
                 }
-
             }
-            
         }
-
     }
     
     
     public enum Wrong: Error {
         case cancel, cancelByUser, notAvailable, wrong, lockout, notEnrolled, fallback
-        var descriotion: String{
+        public var descriotion: String{
             switch self {
             case .cancel:return "取消"
             case .cancelByUser:return "用户点击取消"
@@ -123,7 +128,7 @@ open class Biometrics {
             case .wrong:return "身份验证没有成功，因为用户未能提供有效的凭据(连续3次验证失败时提示)"
             case .lockout:return "Touch ID 功能被锁定"
             case .notEnrolled:return "Touch ID没有注册的手指"
-            case .fallback:return "用户点击返回"
+            case .fallback:return "用户点击输入密码"
                 
             }
         }

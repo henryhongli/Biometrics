@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		0EE9972062D9B2D20F281C559715C666 /* Pods-Biometrics_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C84F79BD5DDCE87BF52D4B3713A012 /* Pods-Biometrics_Example-dummy.m */; };
 		139334BF7CEB07123F7FF301C105D19D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		276C8D49D4F45F8D25E9851B0A2E5165 /* Biometrics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA13F1AA0159E852D8A5493F4674F1E0 /* Biometrics-dummy.m */; };
 		30A020DEB27E2EDA1240183105402C44 /* Pods-Biometrics_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E39AF58919BFCFC2D944221A464873B /* Pods-Biometrics_Tests-dummy.m */; };
 		5D672D3D6F9EB49CA93C17207CE6DCE6 /* Pods-Biometrics_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9883DB2F3D5E3ED79A4893EEA55033A1 /* Pods-Biometrics_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		903BD82BBA6D02D2DE4D6F511981BFAB /* Pods-Biometrics_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F6F1287792FAC519DF1692F5F0E303D3 /* Pods-Biometrics_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C0E715EDB8C2EB5EF830EC4C36E66595 /* Biometrics-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E684D5F593B3092CFDADA65C0E2A040 /* Biometrics-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD94D6FD05CF74B9D0559BC92FA7E168 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A406A2B4CB44B7EA14FDC440B6415082 /* ReplaceMe.swift */; };
+		C0E715EDB8C2EB5EF830EC4C36E66595 /* Biometrics-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BE2B31DEF36B83EF4FE000333417845 /* Biometrics-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC35E632DCCC4F161334D7BBCB7B82F6 /* Biometrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E569E2A0FE6068A494FCC0A7DCAF3FC4 /* Biometrics.swift */; };
 		D6BE18B17AA744B8D19C151C1AA13E74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		F2A3039AF4917A68E133AEDEE43E5A73 /* Biometrics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BF3A8BFE4AF02B7588F1BEA4AB8996 /* Biometrics-dummy.m */; };
 		FFD99B2738E903D02DD48544D44454D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,39 +37,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01919242E45B9178C7093DFB4505ADAF /* Biometrics.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Biometrics.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		07C84F79BD5DDCE87BF52D4B3713A012 /* Pods-Biometrics_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Biometrics_Example-dummy.m"; sourceTree = "<group>"; };
-		0E684D5F593B3092CFDADA65C0E2A040 /* Biometrics-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Biometrics-umbrella.h"; sourceTree = "<group>"; };
 		16BE5E242E38936713D0591CD5965982 /* Pods-Biometrics_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Biometrics_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		1923D9F6158970BEB07BFF0F5C04FDF7 /* Pods-Biometrics_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Biometrics_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		39E5398E6400FC6C63901A1038D50C22 /* Biometrics-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Biometrics-Info.plist"; sourceTree = "<group>"; };
-		3C26807CE8E227C3D3048DA4E752A74B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		429A918F6D59C9BDE48CDBFADB6E8677 /* Biometrics.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Biometrics.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		43B9306B6CBF8059FD10A9716A530008 /* Biometrics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Biometrics.debug.xcconfig; sourceTree = "<group>"; };
+		43BF3A8BFE4AF02B7588F1BEA4AB8996 /* Biometrics-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Biometrics-dummy.m"; sourceTree = "<group>"; };
+		4613C2D959D56429ECB8CF69FDD3BE78 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		47823F964EBD4A0FD69E404AA3DD7839 /* Pods-Biometrics_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Biometrics_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		587C8BAC2265F5B4707052C6362A7735 /* Pods_Biometrics_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Biometrics_Tests.framework; path = "Pods-Biometrics_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A39FB96420964D1FDABB3501CB34BD /* Pods-Biometrics_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Biometrics_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5BE2B31DEF36B83EF4FE000333417845 /* Biometrics-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Biometrics-umbrella.h"; sourceTree = "<group>"; };
 		5D9D37189D0150767DE1D35AE38000AF /* Pods-Biometrics_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Biometrics_Example-frameworks.sh"; sourceTree = "<group>"; };
 		6069D3FF69FD81727908CC2BFC1F20AA /* Pods-Biometrics_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Biometrics_Tests-Info.plist"; sourceTree = "<group>"; };
 		6E39AF58919BFCFC2D944221A464873B /* Pods-Biometrics_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Biometrics_Tests-dummy.m"; sourceTree = "<group>"; };
 		6F8C8129D4A44AE401B7762B4182B0A7 /* Pods-Biometrics_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Biometrics_Tests.modulemap"; sourceTree = "<group>"; };
 		76BA4CF1E018595695C76A36B0BA2F01 /* Pods-Biometrics_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Biometrics_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		909FF652796E3271FCE88B7C88DE8499 /* Biometrics-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Biometrics-prefix.pch"; sourceTree = "<group>"; };
 		9883DB2F3D5E3ED79A4893EEA55033A1 /* Pods-Biometrics_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Biometrics_Tests-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0BB29E29A59927C2D0F511B308CFCEC /* Pods-Biometrics_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Biometrics_Example.modulemap"; sourceTree = "<group>"; };
-		A406A2B4CB44B7EA14FDC440B6415082 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = Biometrics/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		A4BF891748F46C8EE966CD74889F715D /* Biometrics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Biometrics.release.xcconfig; sourceTree = "<group>"; };
-		A7AAE61CC48FB915C4FD8D5D27CF03B5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		CCC5779F8089782D80D8AEF150231DEA /* Biometrics.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Biometrics.modulemap; sourceTree = "<group>"; };
+		ABA0DCA19AA7C21C277170F3B1BCCF37 /* Biometrics-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Biometrics-prefix.pch"; sourceTree = "<group>"; };
+		C87EC6D1C61993A3F2329FA96645DE56 /* Biometrics.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Biometrics.modulemap; sourceTree = "<group>"; };
 		D015CC4BA294387EB18E15ADD5FDC8FD /* Pods-Biometrics_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Biometrics_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D130A50F25C4811FB7FC61A377431ACD /* Pods-Biometrics_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Biometrics_Example-Info.plist"; sourceTree = "<group>"; };
 		DB32950530FCF05DB2C394E824D0122B /* Pods-Biometrics_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Biometrics_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E1C9A0E955181C36465F229761209528 /* Biometrics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Biometrics.debug.xcconfig; sourceTree = "<group>"; };
 		E2E97035F1ABD06F02594F39C0C84FC5 /* Pods-Biometrics_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Biometrics_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E569E2A0FE6068A494FCC0A7DCAF3FC4 /* Biometrics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Biometrics.swift; path = Biometrics/Classes/Biometrics.swift; sourceTree = "<group>"; };
 		E8AE61E01CA631FC79D37C38FB48D791 /* Pods_Biometrics_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Biometrics_Example.framework; path = "Pods-Biometrics_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE7E71BDFF8069447AD4A828389C6B24 /* Biometrics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Biometrics.release.xcconfig; sourceTree = "<group>"; };
 		EF56FC97EE6AAE89E7BAFB200CEACF05 /* Biometrics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Biometrics.framework; path = Biometrics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF5A087074BA8DE230115A0577A6B84B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F34FC6524DF1E6F32E2D9753C60095C2 /* Biometrics-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Biometrics-Info.plist"; sourceTree = "<group>"; };
 		F6F1287792FAC519DF1692F5F0E303D3 /* Pods-Biometrics_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Biometrics_Example-umbrella.h"; sourceTree = "<group>"; };
-		FA13F1AA0159E852D8A5493F4674F1E0 /* Biometrics-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Biometrics-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,17 +100,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		048EA4D38473885AA71D7D19245CE661 /* Biometrics */ = {
-			isa = PBXGroup;
-			children = (
-				A406A2B4CB44B7EA14FDC440B6415082 /* ReplaceMe.swift */,
-				8D11A4472795D7E142E9C62F96611EBF /* Pod */,
-				6602AEF7AEE6E3A2053202E617AF0F3A /* Support Files */,
-			);
-			name = Biometrics;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		12696197AA2E63AE8FC43C4A8279042C /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,27 +135,38 @@
 			path = "Target Support Files/Pods-Biometrics_Tests";
 			sourceTree = "<group>";
 		};
-		6602AEF7AEE6E3A2053202E617AF0F3A /* Support Files */ = {
+		7923AA45A0F80AC7DC0C01090F597350 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CCC5779F8089782D80D8AEF150231DEA /* Biometrics.modulemap */,
-				FA13F1AA0159E852D8A5493F4674F1E0 /* Biometrics-dummy.m */,
-				39E5398E6400FC6C63901A1038D50C22 /* Biometrics-Info.plist */,
-				909FF652796E3271FCE88B7C88DE8499 /* Biometrics-prefix.pch */,
-				0E684D5F593B3092CFDADA65C0E2A040 /* Biometrics-umbrella.h */,
-				43B9306B6CBF8059FD10A9716A530008 /* Biometrics.debug.xcconfig */,
-				A4BF891748F46C8EE966CD74889F715D /* Biometrics.release.xcconfig */,
+				C87EC6D1C61993A3F2329FA96645DE56 /* Biometrics.modulemap */,
+				43BF3A8BFE4AF02B7588F1BEA4AB8996 /* Biometrics-dummy.m */,
+				F34FC6524DF1E6F32E2D9753C60095C2 /* Biometrics-Info.plist */,
+				ABA0DCA19AA7C21C277170F3B1BCCF37 /* Biometrics-prefix.pch */,
+				5BE2B31DEF36B83EF4FE000333417845 /* Biometrics-umbrella.h */,
+				E1C9A0E955181C36465F229761209528 /* Biometrics.debug.xcconfig */,
+				EE7E71BDFF8069447AD4A828389C6B24 /* Biometrics.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/Biometrics";
 			sourceTree = "<group>";
 		};
-		8D11A4472795D7E142E9C62F96611EBF /* Pod */ = {
+		A5FA5169F09EBC2C6FDF2FE0286AC8F0 /* Biometrics */ = {
 			isa = PBXGroup;
 			children = (
-				429A918F6D59C9BDE48CDBFADB6E8677 /* Biometrics.podspec */,
-				A7AAE61CC48FB915C4FD8D5D27CF03B5 /* LICENSE */,
-				3C26807CE8E227C3D3048DA4E752A74B /* README.md */,
+				E569E2A0FE6068A494FCC0A7DCAF3FC4 /* Biometrics.swift */,
+				A7954BEE87DB17B968FBC68DC3D8982B /* Pod */,
+				7923AA45A0F80AC7DC0C01090F597350 /* Support Files */,
+			);
+			name = Biometrics;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A7954BEE87DB17B968FBC68DC3D8982B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				01919242E45B9178C7093DFB4505ADAF /* Biometrics.podspec */,
+				EF5A087074BA8DE230115A0577A6B84B /* LICENSE */,
+				4613C2D959D56429ECB8CF69FDD3BE78 /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -201,7 +201,7 @@
 		DE9C377DAB1FA0F2B7A139FD98643C38 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				048EA4D38473885AA71D7D19245CE661 /* Biometrics */,
+				A5FA5169F09EBC2C6FDF2FE0286AC8F0 /* Biometrics */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -277,7 +277,7 @@
 			buildConfigurationList = 840CA9DD9A55BEFDBED84C7692D5C2C7 /* Build configuration list for PBXNativeTarget "Biometrics" */;
 			buildPhases = (
 				14B9CFE2EA293AB046FC8CA84ADD9CBB /* Headers */,
-				D97F79B3822FDAFE2B776BAD72987D23 /* Sources */,
+				7655419E3008D6D79D0064006FDE4C65 /* Sources */,
 				1F3D9CE8D7C857CB26689AB6242A4032 /* Frameworks */,
 				932561441D067FC9273F11BCB6A3780F /* Resources */,
 			);
@@ -363,6 +363,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7655419E3008D6D79D0064006FDE4C65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2A3039AF4917A68E133AEDEE43E5A73 /* Biometrics-dummy.m in Sources */,
+				CC35E632DCCC4F161334D7BBCB7B82F6 /* Biometrics.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D096F25D87924860B7BA9CC2E0EC171 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -376,15 +385,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				30A020DEB27E2EDA1240183105402C44 /* Pods-Biometrics_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D97F79B3822FDAFE2B776BAD72987D23 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				276C8D49D4F45F8D25E9851B0A2E5165 /* Biometrics-dummy.m in Sources */,
-				CD94D6FD05CF74B9D0559BC92FA7E168 /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,7 +408,7 @@
 /* Begin XCBuildConfiguration section */
 		06E9DACB06EEADA7A5CEF6699B7ECE27 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4BF891748F46C8EE966CD74889F715D /* Biometrics.release.xcconfig */;
+			baseConfigurationReference = EE7E71BDFF8069447AD4A828389C6B24 /* Biometrics.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -507,7 +507,7 @@
 		};
 		4B7C46A15DC507D190FCCDE8874376EB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43B9306B6CBF8059FD10A9716A530008 /* Biometrics.debug.xcconfig */;
+			baseConfigurationReference = E1C9A0E955181C36465F229761209528 /* Biometrics.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

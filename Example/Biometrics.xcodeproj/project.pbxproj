@@ -15,7 +15,6 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		88A140200829521E666F5ACC /* Pods_Biometrics_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE10995D5E81216A5C8B1C15 /* Pods_Biometrics_Tests.framework */; };
 		BA7DC2DFA927C16965E3E798 /* Pods_Biometrics_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AB4792D125B31B103CF856 /* Pods_Biometrics_Example.framework */; };
-		C34C9CC0246B9F6A00EA6E84 /* Biometrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C9CBF246B9F6A00EA6E84 /* Biometrics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +46,6 @@
 		A051EE33AC8ADFFD210AC48D /* Pods-Biometrics_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Biometrics_Tests.release.xcconfig"; path = "Target Support Files/Pods-Biometrics_Tests/Pods-Biometrics_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A1CDCD4A9F3380E8CBFFC54B /* Pods-Biometrics_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Biometrics_Example.release.xcconfig"; path = "Target Support Files/Pods-Biometrics_Example/Pods-Biometrics_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C2A6DE88E76852FB6A65159A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		C34C9CBF246B9F6A00EA6E84 /* Biometrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Biometrics.swift; sourceTree = "<group>"; };
 		FE10995D5E81216A5C8B1C15 /* Pods_Biometrics_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Biometrics_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -115,7 +113,6 @@
 		607FACD21AFB9204008FA782 /* Example for Biometrics */ = {
 			isa = PBXGroup;
 			children = (
-				C34C9CBE246B9F3C00EA6E84 /* Biometrics */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -160,14 +157,6 @@
 				93E50CC72EAFBFE4A6223AE5 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
-			sourceTree = "<group>";
-		};
-		C34C9CBE246B9F3C00EA6E84 /* Biometrics */ = {
-			isa = PBXGroup;
-			children = (
-				C34C9CBF246B9F6A00EA6E84 /* Biometrics.swift */,
-			);
-			name = Biometrics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 7N4V3C3R67;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 7N4V3C3R67;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -342,7 +333,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C34C9CC0246B9F6A00EA6E84 /* Biometrics.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
@@ -490,6 +480,7 @@
 			baseConfigurationReference = 27FC0FE8E3DEAF9C592BC8F4 /* Pods-Biometrics_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7N4V3C3R67;
 				INFOPLIST_FILE = Biometrics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -505,6 +496,7 @@
 			baseConfigurationReference = A1CDCD4A9F3380E8CBFFC54B /* Pods-Biometrics_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7N4V3C3R67;
 				INFOPLIST_FILE = Biometrics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -519,6 +511,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 657E9974D6500ECBF0445175 /* Pods-Biometrics_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 7N4V3C3R67;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -541,6 +534,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A051EE33AC8ADFFD210AC48D /* Pods-Biometrics_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 7N4V3C3R67;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

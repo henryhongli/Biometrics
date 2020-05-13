@@ -1,6 +1,6 @@
 import XCTest
-import Biometrics
-
+//import Biometrics
+//
 class Tests: XCTestCase {
     
     override func setUp() {

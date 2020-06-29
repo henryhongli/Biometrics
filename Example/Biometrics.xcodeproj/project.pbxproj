@@ -15,6 +15,7 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		88A140200829521E666F5ACC /* Pods_Biometrics_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE10995D5E81216A5C8B1C15 /* Pods_Biometrics_Tests.framework */; };
 		BA7DC2DFA927C16965E3E798 /* Pods_Biometrics_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AB4792D125B31B103CF856 /* Pods_Biometrics_Example.framework */; };
+		C39CCEED24A9E33B008AEC90 /* iOS 生物识别.png in Resources */ = {isa = PBXBuildFile; fileRef = C39CCEEC24A9E33B008AEC90 /* iOS 生物识别.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		A051EE33AC8ADFFD210AC48D /* Pods-Biometrics_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Biometrics_Tests.release.xcconfig"; path = "Target Support Files/Pods-Biometrics_Tests/Pods-Biometrics_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A1CDCD4A9F3380E8CBFFC54B /* Pods-Biometrics_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Biometrics_Example.release.xcconfig"; path = "Target Support Files/Pods-Biometrics_Example/Pods-Biometrics_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C2A6DE88E76852FB6A65159A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C39CCEEC24A9E33B008AEC90 /* iOS 生物识别.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 生物识别.png"; sourceTree = "<group>"; };
 		FE10995D5E81216A5C8B1C15 /* Pods_Biometrics_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Biometrics_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -152,6 +154,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				C39CCEEC24A9E33B008AEC90 /* iOS 生物识别.png */,
 				89E52C4A39A1413E823856B7 /* Biometrics.podspec */,
 				C2A6DE88E76852FB6A65159A /* README.md */,
 				93E50CC72EAFBFE4A6223AE5 /* LICENSE */,
@@ -251,6 +254,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				C39CCEED24A9E33B008AEC90 /* iOS 生物识别.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,6 +16,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 Biometrics is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
+![类图](https://raw.githubusercontent.com/henryhongli/Biometrics/master/Example/iOS%20生物识别.png)
+
+
 ```ruby
 pod 'Biometrics'
 ```

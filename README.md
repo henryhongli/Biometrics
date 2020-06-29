@@ -8,7 +8,7 @@
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-# Android [Spring-data-jpa Addroid实现](https://github.com/sdohubs/Biometrics.git)](https://github.com/sdohubs/Biometrics.git)
+# Android  [生物识别工具](https://github.com/sdohubs/Biometrics.git)](https://github.com/sdohubs/Biometrics.git)
 
 # iOS 
 ## Requirements

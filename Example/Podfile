@@ -3,6 +3,7 @@ use_frameworks!
 target 'Biometrics_Example' do
   pod 'Biometrics', :path => '../'
 
+  pod 'SwiftLint'
   target 'Biometrics_Tests' do
     inherit! :search_paths
 

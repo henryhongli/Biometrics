@@ -18,13 +18,13 @@ open class Biometrics {
     /// - face_Id: 面部识别
     /// - touch_Id: 指纹识别
     public enum Style: CustomStringConvertible {
-        case none, face_Id, touch_Id
+        case none, face, touch
         
         public var description: String {
             switch self {
             case .none: return ""
-            case .face_Id: return "面容ID"
-            case .touch_Id: return "触控ID"
+            case .face: return "面容ID"
+            case .touch: return "触控ID"
             }
         }
     }
@@ -44,14 +44,13 @@ open class Biometrics {
     public var systemDescription: String {
         switch system {
         case .none: return ""
-        case .face_Id, .touch_Id:
+        case .face, .touch:
             return "系统设置 -> \(system.description)\("与密码")"
         }
     }
     
     /// 此机器是否有生物识别
     public var isSet: Bool { return system != .none }
-    
     
     public static func analysis(_ error: Error?) -> Result<(), Wrong> {
         
@@ -109,18 +108,16 @@ open class Biometrics {
                 
                 if success {
                     tryUnlock(.success(()))
-                }
-                else {
+                } else {
                     tryUnlock(analysis(error))
                 }
             }
         }
     }
     
-    
     public enum Wrong: Error {
         case cancel, cancelByUser, notAvailable, wrong, lockout, notEnrolled, fallback
-        public var descriotion: String{
+        public var descriotion: String {
             switch self {
             case .cancel:return "取消"
             case .cancelByUser:return "用户点击取消"
@@ -136,21 +133,25 @@ open class Biometrics {
 
 }
 
-
 extension Biometrics: CustomDebugStringConvertible {
     
     public var debugDescription: String {
-        let e = enable_lockout
+        let e = enableLockout
         return "style: \(system), enable: \(e.enable), lockout: \(e.lockout), enrolled: \(e.enrolled)"
     }
     
 }
 
+public struct BIOLockOut {
+    let enable: Bool
+    let lockout: Bool
+    let enrolled: Bool
+}
+
 extension Biometrics {
     
-    
     /// 是否 可用/被锁定
-    public var enable_lockout: (enable: Bool, lockout: Bool, enrolled: Bool) {
+    public var enableLockout: BIOLockOut {
         
         var error: NSError?
         
@@ -171,11 +172,8 @@ extension Biometrics {
         if case .failure(.notEnrolled) = analysis {
             enrolled.toggle()
         }
-        
-        return (enable && !lock && enrolled, lock, enrolled)
+        return BIOLockOut(enable: enable && !lock && enrolled, lockout: lock, enrolled: enrolled)
     }
-    
-    
     
     /// 系统支持的识别方式
     private static let systemSupportBiometrics: Biometrics.Style = {
@@ -194,21 +192,19 @@ extension Biometrics {
         
         guard let era = Int(deviceName.replacingOccurrences(of: "iPhone", with: "")) else { return .none }
         
-        if era > 10 || (deviceString == "iPhone10,3") || (deviceString == "iPhone10,6") {
-            return .face_Id
-        }
-        else if (era >= 6 && era <= 10) {
-            return .touch_Id
-        }
-        else {
-            return .none
-        }
+        if isFaceStyle(deviceString: deviceName, era: era) == true { return .face }
+        if ( era >= 6 && era <= 10 ) == true { return .touch }
+        return .none
+        
     }()
     
-    
+    private static func isFaceStyle (deviceString: String, era: Int) -> Bool {
+        return (era > 10 || (deviceString == "iPhone10,3") || (deviceString == "iPhone10,6"))
+    }
     static func isSimulator() -> Bool {
-        if let _ = ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] { return true }
+        guard ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] != nil else {
+            return true
+        }
         return false
     }
 }
-

@@ -1,8 +1,14 @@
 PODS:
   - Biometrics (0.1.0)
+  - SwiftLint (0.40.1)
 
 DEPENDENCIES:
   - Biometrics (from `../`)
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - SwiftLint
 
 EXTERNAL SOURCES:
   Biometrics:
@@ -10,7 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Biometrics: 0e5761ae1aac4c9f9c63220ccfa9c4d36e76ff40
+  SwiftLint: bbfed21bf4451dcbd0f5cdbee44a18e06cf91b12
 
-PODFILE CHECKSUM: 3b64da7d4ea4c2baf3769a36d8d277279491b2d2
+PODFILE CHECKSUM: bded62c986854eda5b91b0a3c17a2a2d33dded42
 
 COCOAPODS: 1.9.1

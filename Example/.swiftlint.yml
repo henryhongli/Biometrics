@@ -1,0 +1,42 @@
+disabled_rules:
+  - line_length
+  - type_name
+  - trailing_whitespace
+
+opt_in_rules:
+  - empty_count
+  - force_unwrapping
+  - extension_access_modifier
+
+included:
+  - ../Biometrics
+
+excluded:
+  - Pods
+  - Tests
+
+function_body_length:
+  warning: 50
+
+identifier_name:
+  min_length: # only min_length
+    warning: 1
+
+
+custom_rules:
+  no_gi_includs: # rule identifier
+    included: ".*\\.swift" # regex that defines paths to include during linting. optional.
+    excluded: ".*Test\\.swift" # regex that defines paths to exclude during linting. optional
+    name: "No GI Includs" # rule name. optional.
+    regex: "([ ][g,G][i,I])" # matching pattern
+#    regex: "([g,G][i,I])" # matching pattern
+    capture_group: 0 # number of regex capture group to highlight the rule violation at. optional.
+    match_kinds: # SyntaxKinds to match. optional.
+      - comment
+      - identifier
+      - string
+    #message: "" # violation message. optional.
+    severity: error # violation severity. optional.
+  #no_gi_hiding_in_strings:
+   # regex: "([g,G][i,I])"
+  #  match_kinds: string
